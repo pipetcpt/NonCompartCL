@@ -159,9 +159,9 @@ sNCA = function(x, y, dose=0, adm="Extravascular", dur=0, doseUnit="mg", timeUni
   }
 
   if (toupper(trimws(adm)) == "EXTRAVASCULAR") {
-    Res["VZFO"] = dose/Res["AUCIFO"]/Res["LAMZ"]
+    Res["VZFO"] = dose/Res["AUCLST"]/Res["LAMZ"]
     Res["VZFP"] = dose/Res["AUCIFP"]/Res["LAMZ"]
-    Res["CLFO"] = dose/Res["AUCIFO"]
+    Res["CLFO"] = dose/Res["AUCLST"]
     Res["CLFP"] = dose/Res["AUCIFP"]
     Res["MRTEVLST"] = Res["AUMCLST"]/Res["AUCLST"]
     Res["MRTEVIFO"] = Res["AUMCIFO"]/Res["AUCIFO"]
